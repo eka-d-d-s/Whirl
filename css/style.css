@@ -9,13 +9,20 @@ body{
     margin: 0 auto;
 }
 .header{
+    position: fixed;
+    width: 100%;
     padding: 20px 0;
+    top: 0;
+    left: 0;
+    background-color: white;
 
 }
 .header-row{
     display: flex;
     align-items: center;
     gap: 36px;
+    
+
 }
 .menu{
     padding: 0;
@@ -33,7 +40,9 @@ body{
     text-decoration: none;
 }
 .btn{
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     padding: 6px 20px;
     font-size: 15px;
     line-height: 160%;
@@ -45,10 +54,17 @@ body{
 .btn.blue{
     color: #0070a0;
 }
+.btn.blue svg path{
+    stroke: #006B99;
+    transition:0.6s;
+}
 .btn.blue:hover{
     background-color:#0070a0 ;
     color: white;
 }
+.btn.blue:hover svg path{
+    stroke: white;
+    }
 .btn.white{
 background-color:#0070a0;
 color: white;
@@ -62,3 +78,156 @@ color: white;
     gap: 12px;
     margin-left: auto;
 }
+.hero{
+    padding: 145px 0 80px;
+
+}
+.hero-row{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+
+}
+.hero-left{
+    min-width: 525px;
+   display: flex;
+   flex-direction: column;
+   gap: 21px;
+}
+.hero-title{
+    margin: 0;
+    font-family: 'Fraunces'sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    letter-spacing: 0em;
+    color: #1f1f1f;
+}
+.hero-desc{
+    margin: 0;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+    max-width:67%;
+}
+.hero-btns{
+    display: flex;
+    gap: 12px;
+}
+.advantages-item{
+    padding: 32px 32px 40px 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+}
+.advantages-item-title{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+}
+.advantages-item-desc{
+    margin: 0;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+
+}
+.advantages-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px;
+}
+.advantages-item-container{
+    width: 33.3%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.care{
+    margin-top: 120px;
+    background-color:#f7f9fa;
+    padding: 80px 0;
+}
+
+.care-title{
+    margin: 0 0 62px;
+    font-family: "Fraunces",sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+    letter-spacing: 0em;
+    color: #1f1f1f;
+    max-width: 50%;
+}
+
+.care-title span{
+    font-size: 39px;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+}
+ .care-faq{
+    max-width: 450px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+ .care-faq li{
+    padding: 16px 12px;
+    border-top: 1px solid #c2cdd8;
+    border-bottom: 1px solid #c2cdd8;
+ }
+
+
+ .care-faq-head{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 20px;
+    line-height: 126%;
+    letter-spacing: 0.01em;
+    color: #626a72;
+ }
+ .care-faq-head:after{
+    content: "";
+    width: 18px;
+    height: 10px;
+    background-image: url(../img/errow.svg);
+    margin-left: auto;
+ }
+ .care-faq-body{
+    padding-left: 48px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+ }
+ .care-faq li:hover .care-faq-body{
+   max-height: 1000px;
+   opacity: 1;
+   
+ }
+ /* .care-faq li + li{
+    margin-top: 5px;
+ } */
+ .care-row{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+ }
+ 
